@@ -439,12 +439,12 @@
         return;
       }
 
-      if (pubsToShow.length < totalCount) {
-        listInfoEl.textContent = `Showing ${pubsToShow.length} of ${totalCount} total publications, most recent first.`;
-      } else {
-        listInfoEl.textContent = `Showing all ${pubsToShow.length} publications, most recent first.`;
-      }
-      listInfoEl.style.display = 'block';
+//    if (pubsToShow.length < totalCount) {
+//      listInfoEl.textContent = `Showing ${pubsToShow.length} of ${totalCount} total publications, most recent first.`;
+//    } else {
+//      listInfoEl.textContent = `Showing all ${pubsToShow.length} publications, most recent first.`;
+//    }
+      listInfoEl.style.display = 'none'; //'block';
 
       const html = pubsToShow.map(p => {
         const pmid = p.uid;
